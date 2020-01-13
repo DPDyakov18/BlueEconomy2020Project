@@ -1944,14 +1944,14 @@
 				color: #aaa;
 			}
 
-		input[type="submit"].special,
-		input[type="reset"].special,
-		input[type="button"].special,
-		button.special,
-		.button.special {
-			background-color: #f32853;
-			color: #ffffff !important;
-		}
+        input[type="submit"].special,
+        input[type="reset"].special,
+        input[type="button"].special,
+        button.special,
+        .button.special {
+            background-color: #1aa3ff;
+            color: #ffffff !important;
+        }
 
 			input[type="submit"].special:hover,
 			input[type="reset"].special:hover,
