@@ -6,6 +6,56 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="css/main.css" />
+        <script src="https://code.jquery.com/jquery-3.4.1.js"
+                integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+                crossorigin="anonymous"></script>
+
+
+        <script>
+            $(function () {
+                
+
+                $.getJSON("http://blynk-cloud.com/9487047964da46b2962985d4bcf9fc83/get/V5  ", function (data) {
+
+                    $("#vHumiditySoil").text(data[0]);
+                   
+                })
+                
+            });
+             $(function () {
+                
+
+                $.getJSON("http://blynk-cloud.com/9487047964da46b2962985d4bcf9fc83/get/V6  ", function (data) {
+
+                    $("#vTemperature").text(data[0]);
+                   
+                })
+                
+             });
+              $(function () {
+                
+
+                $.getJSON("http://blynk-cloud.com/9487047964da46b2962985d4bcf9fc83/get/V7  ", function (data) {
+
+                    $("#vHumidityAir").text(data[0]);
+                   
+                })
+                
+              });
+             $(function () {
+                
+
+                $.getJSON("http://blynk-cloud.com/9487047964da46b2962985d4bcf9fc83/get/V8  ", function (data) {
+
+                    $("#vWaterStatus").text(data[0]);
+                   
+                })
+                
+            });
+
+
+        </script>
+
 	</head>
 	<body>
 
@@ -27,17 +77,13 @@
 
 		<!-- Main -->
 			<section id="main" class="wrapper">
-				<div class="container">
+                <div class="container">
 
-					<header class="major special">
-						<h2>text</h2>
-						<p>text</p>
-					</header>
-
-					<a href="#" class="image fit"><img src="images/pic01.jpg" alt="" /></a>
-					<p>text</p>
-
-				</div>
+                    <p id="vHumiditySoil">?</p>
+                    <p id="vTemperature">?</p>
+                    <p id="vHumidityAir">?</p>
+                    <p id="vWaterStatus">?</p>
+                </div>
 			</section>
 
 		<!-- Footer -->
@@ -51,6 +97,9 @@
 
 				</div>
 			</footer>
+
+
+
 
 	</body>
 </html>
