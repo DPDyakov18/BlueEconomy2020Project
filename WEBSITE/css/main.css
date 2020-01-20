@@ -2664,6 +2664,7 @@
 	}
 
 	header h2 + p {
+        color:dimgrey;
 		font-size: 1.25em;
 		margin-top: -1em;
 		line-height: 1.5em;
@@ -3186,26 +3187,27 @@
     background-size: cover;
     line-height: 1.75;
     text-align: center;
+    background-attachment: fixed;
 }
 
 		#banner:last-child {
 			margin-bottom: 0;
 		}
 
-		#banner h2 {
-			color: #ffffff;
-			display: inline-block;
-			font-size: 3.5em;
-			line-height: 1.35;
-			margin-bottom: 0.5em;
-		}
+    #banner h2 {
+        color: #262626;
+        display: inline-block;
+        font-size: 3.5em;
+        line-height: 1.35;
+        margin-bottom: 0.5em;
+    }
 
-		#banner p {
-			color: #aaa;
-			font-size: 1.5em;
-			margin-bottom: 1.75em;
-			text-transform: uppercase;
-		}
+    #banner p {
+        color: #262626;
+        font-size: 1.5em;
+        margin-bottom: 1.75em;
+        text-transform: uppercase;
+    }
 
 		@media screen and (max-width: 1280px) {
 
