@@ -29,9 +29,9 @@ Adafruit_MCP3008 adc;
 // Initializing the pin for the float switch
 int FloatSensor = D1;
 int buttonState = 1;
-char ssid[] = "готинмотин";
-char pass[] = "azis123aa";
-char auth[] = "9487047964da46b2962985d4bcf9fc83";
+char ssid[] = "";
+char pass[] = "";
+char auth[] = "";
 // Initializing the pin for the photoresistor
 const int pResistor = A0;
 int count = 0;
@@ -55,7 +55,12 @@ void setup()
   // Set up the pins that are used
   pinMode(FloatSensor, INPUT_PULLUP);
   pinMode(pResistor, INPUT);
+  pinMode(D0, OUTPUT);
   timer.setInterval(1000L, myTimerEvent);
+  digitalWrite(D0, HIGH);
+  delay(2000);
+  digitalWrite(D0, LOW);
+  delay(2000);
 }
 
 void myTimerEvent()
