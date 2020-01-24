@@ -3257,7 +3257,22 @@
 			}
 
 		}
+        /*Table statistics*/
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
 
+td, th {
+    border: 2px solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #99e699;
+}
 /* Footer */
 
 	#footer {
