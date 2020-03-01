@@ -6,75 +6,64 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/main.css" />
-    
+    <link rel="icon"
+          type="image/png"
+          href="logo\favicon.png">
 </head>
 <body>
-<script type="text/javascript">
-if (window.top !== window.self) {window.top.location = window.self.location;}
+    <script type="text/javascript">
+        if (window.top !== window.self) { window.top.location = window.self.location; }
 
 
-function querySt(ji) {
-hu = window.location.search.substring(1);
-gy = hu.split("&");
-for (i=0;i<gy.length;i++) {
-ft = gy[i].split("=");
-if (ft[0] == ji) {
-return ft[1];
-}
-}
-}
+        function querySt(ji) {
+            hu = window.location.search.substring(1);
+            gy = hu.split("&");
+            for (i = 0; i < gy.length; i++) {
+                ft = gy[i].split("=");
+                if (ft[0] == ji) {
+                    return ft[1];
+                }
+            }
+        }
 
 
 
-var cPath = querySt("u");
-if(cPath == "")
-  cPath="http://www.certifiedchinesetranslation.com/";
+        var cPath = querySt("u");
+        if (cPath == "")
+            cPath = "http://www.certifiedchinesetranslation.com/";
 
-function change_country()
-{
-var country=document.getElementById('countries').value;
-//alert(country);
-window.location="index.php?regioncode="+country;
-}
-function Determine1(loopvalue,enginecount,engine)
-{
-for(i=0;i<enginecount;i++)
-{ if(i==loopvalue){document.getElementById("active2"+i).style.display="";
- document.getElementById("inactive2"+i).style.display="none";
- }
- else
- {
- document.getElementById("inactive2"+i).style.display="";
-  document.getElementById("active2"+i).style.display="none";
-    }
-    }document.getElementById('type').value=engine;
-     }
+        function change_country() {
+            var country = document.getElementById('countries').value;
+            //alert(country);
+            window.location = "index.php?regioncode=" + country;
+        }
+        function Determine1(loopvalue, enginecount, engine) {
+            for (i = 0; i < enginecount; i++) {
+                if (i == loopvalue) {
+                    document.getElementById("active2" + i).style.display = "";
+                    document.getElementById("inactive2" + i).style.display = "none";
+                }
+                else {
+                    document.getElementById("inactive2" + i).style.display = "";
+                    document.getElementById("active2" + i).style.display = "none";
+                }
+            } document.getElementById('type').value = engine;
+        }
 
-		function change_country()
-		{
-		var country=document.getElementById('countries').value;
-		 }
+        function change_country() {
+            var country = document.getElementById('countries').value;
+        }
 
-</script>
+    </script>
 
 
-<!-- Begin Translation Button -->
+    <!-- Begin Translation Button -->
     <script type="text/javascript">var translate_src = 'en';</script>
     <div class="translate">
-        <h2>
-            Translate: <a href="#" onClick="getURL('bg');"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Bulgaria.svg/2000px-Flag_of_Bulgaria.svg.png" width="35" /> </a>
-            <a href="#" onClick="getURL('es');"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/1200px-Flag_of_Spain.svg.png" width="35" /> </a>
-            <a href="#" onClick="getURL('sr');"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Flag_of_Serbia.svg/800px-Flag_of_Serbia.svg.png" width="35" /> </a>
-            <a href="#" onClick="getURL('vi');"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/1200px-Flag_of_Vietnam.svg.png" width="35" /> </a>
-            <a href="#" onClick="getURL('de');"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1280px-Flag_of_Germany.svg.png" width="35" /> </a>
-            <a href="#" onClick="getURL('tr');"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg" width="35" /> </a>
-            <a href="#" onClick="getURL('hi');"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png" width="35" /> </a>
-
-        </h2>
+        <h2>  Translate: <a href="#" onClick="getURL('bg');"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Bulgaria.svg/2000px-Flag_of_Bulgaria.svg.png" width="35" /> </a></h2>
     </div>
+    <script language="JavaScript" type="text/javascript" src="http://www.certifiedchinesetranslation.com/button/flag_translate.js"></script>
     <!-- End Translation Button -->
-
-<script language="JavaScript" type="text/javascript" src="http://www.certifiedchinesetranslation.com/button/flag_translate.js"></script>
     <!-- Header -->
     <header id="header">
         <img src="logo/logo.png" class="logo" height="75" width="260" />
